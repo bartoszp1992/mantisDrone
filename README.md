@@ -33,12 +33,12 @@
 : RADIOMASTER Pocket(Crush) ELRS LBT, or any other with ELRS and edgeTX
 - **batteries**
 : 2x 18650 any branded Li-Ion cells for controller supply
-- **google**
-: BETAFPV VR03 or any other analog googles
+- **goggle**
+: BETAFPV VR03 or any other analog goggles
 - **memory**
 : 32G SDcard if you want to record your flights
 - **power bank**
-: any 10-20 Ah PD power bank due to the small battery of googles
+: any 10-20 Ah PD power bank due to the small battery of goggles
 
 ## software
 - **FC config**
