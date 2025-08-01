@@ -45,7 +45,7 @@ vtxtable powervalues 100 350
 vtxtable powerlabels EU MAX
 
 # master
-set acc_calibration = 7,10,-16,1
+set acc_calibration = -13,36,-26,1
 set fpv_mix_degrees = 20
 set dshot_idle_value = 750
 set failsafe_delay = 10
@@ -53,7 +53,10 @@ set failsafe_off_delay = 25
 set failsafe_throttle = 1250
 set bat_capacity = 250
 set vbat_max_cell_voltage = 435
+set vbat_scale = 123
+set ibata_scale = 521
 set ibata_offset = -600
+set small_angle = 180
 set gps_ublox_use_galileo = ON
 set pid_process_denom = 2
 set osd_warn_bitmask = 270333
@@ -78,14 +81,19 @@ set osd_warnings_pos = 2378
 set osd_battery_usage_pos = 2432
 set osd_disarmed_pos = 2347
 set osd_core_temp_pos = 2424
+set osd_stick_overlay_left_pos = 128
+set osd_stick_overlay_right_pos = 151
 set osd_stat_bitmask = 3896
 set osd_displayport_device = AUTO
 set osd_canvas_width = 30
 set osd_canvas_height = 13
-set vtx_band = 2
-set vtx_channel = 4
-set vtx_freq = 5790
+set vtx_band = 5
+set vtx_channel = 1
+set vtx_power = 2
+set vtx_freq = 5658
 set vcd_video_system = NTSC
+set displayport_max7456_blk = 2
+set displayport_max7456_wht = 0
 set craft_name = "MANTIS"
 set pilot_name = Bartosz
 
