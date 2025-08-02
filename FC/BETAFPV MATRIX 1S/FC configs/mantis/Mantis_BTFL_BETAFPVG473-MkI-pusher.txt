@@ -70,6 +70,7 @@ set osd_ah_sbar_pos = 270
 set osd_ah_pos = 142
 set osd_current_pos = 2400
 set osd_craft_name_pos = 2081
+set osd_pilot_name_pos = 2095
 set osd_gps_speed_pos = 407
 set osd_gps_lon_pos = 49
 set osd_gps_lat_pos = 81
@@ -90,13 +91,13 @@ set osd_canvas_width = 30
 set osd_canvas_height = 13
 set vtx_band = 5
 set vtx_channel = 1
-set vtx_power = 2
+set vtx_power = 1
 set vtx_freq = 5658
 set vcd_video_system = NTSC
 set displayport_max7456_blk = 2
 set displayport_max7456_wht = 0
 set craft_name = "MANTIS"
-set pilot_name = Bartosz
+set pilot_name = Bartosz SQ5SAZ
 
 profile 0
 
