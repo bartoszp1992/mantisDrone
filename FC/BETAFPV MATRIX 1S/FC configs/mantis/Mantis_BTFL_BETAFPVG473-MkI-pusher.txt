@@ -48,6 +48,7 @@ vtxtable powerlabels EU MAX
 set acc_calibration = 37,292,10,1
 set fpv_mix_degrees = 20
 set dshot_idle_value = 750
+set motor_output_reordering = 3,1,2,0,4,5,6,7
 set failsafe_delay = 10
 set failsafe_off_delay = 25
 set failsafe_throttle = 1250
