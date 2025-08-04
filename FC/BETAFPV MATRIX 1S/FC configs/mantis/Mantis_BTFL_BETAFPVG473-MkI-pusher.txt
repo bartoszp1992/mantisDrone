@@ -1,5 +1,6 @@
 defaults nosave
 
+# diff all
 
 # version
 # Betaflight / STM32G47X (SG47) 4.5.1 Apr  1 2025 / 22:44:19 (77d01ba3b) MSP API: 1.46
@@ -40,9 +41,9 @@ vtxtable band 3 BOSCAM_E E CUSTOM  5705 5685 5665 5645 5885 5905 5925 5945
 vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
 vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
 vtxtable band 6 LOWRACE  L CUSTOM  5362 5399 5436 5473 5510 5547 5584 5621
-vtxtable powerlevels 4
-vtxtable powervalues 25 100 200 400
-vtxtable powerlabels 25 100 200 400
+vtxtable powerlevels 5
+vtxtable powervalues 1 2 3 4 0
+vtxtable powerlabels 25 100 200 400 PIT
 
 # master
 set acc_calibration = 37,292,10,1
@@ -97,7 +98,7 @@ set vcd_video_system = NTSC
 set displayport_max7456_blk = 2
 set displayport_max7456_wht = 0
 set craft_name = "MANTIS"
-set pilot_name = Bartosz SQ5SAZ
+set pilot_name = Bart SQ5SAZ
 
 profile 0
 
