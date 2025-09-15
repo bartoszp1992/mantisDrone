@@ -24,7 +24,7 @@ feature LED_STRIP
 feature OSD
 
 # aux
-aux 0 0 0 1925 2100 0 0
+aux 0 0 1 1400 2100 0 0
 aux 1 1 2 925 1075 1 0
 aux 2 1 4 925 1075 1 0
 aux 3 2 2 1400 1600 0 0

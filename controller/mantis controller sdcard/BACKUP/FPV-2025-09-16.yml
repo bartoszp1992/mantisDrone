@@ -1,6 +1,6 @@
 semver: 2.10.0
 header: 
-   name: "MANTIS"
+   name: "FPV"
 timers: 
    0:
       start: 0
@@ -48,6 +48,36 @@ mixData:
    name: ""
  -
    weight: 100
+   destCh: 0
+   srcRaw: I4
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "MUL"
+ -
+   weight: 0
+   destCh: 0
+   srcRaw: I3
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "L5"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "LIM"
+ -
+   weight: 100
    destCh: 1
    srcRaw: I1
    carryTrim: 0
@@ -61,6 +91,36 @@ mixData:
    speedUp: 0
    speedDown: 0
    name: ""
+ -
+   weight: 100
+   destCh: 1
+   srcRaw: I4
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "MUL"
+ -
+   weight: 0
+   destCh: 1
+   srcRaw: I1
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "L5"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "LIM"
  -
    weight: 100
    destCh: 2
@@ -78,6 +138,42 @@ mixData:
    name: ""
  -
    weight: 100
+   destCh: 2
+   srcRaw: I2
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "L4"
+   flightModes: 000000000
+   curve: 
+      type: 3
+      value: 1
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "LIM1"
+ -
+   weight: 100
+   destCh: 2
+   srcRaw: I2
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "L5"
+   flightModes: 000000000
+   curve: 
+      type: 3
+      value: 2
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "LIM2"
+ -
+   weight: 100
    destCh: 3
    srcRaw: I0
    carryTrim: 0
@@ -91,6 +187,21 @@ mixData:
    speedUp: 0
    speedDown: 0
    name: ""
+ -
+   weight: 100
+   destCh: 3
+   srcRaw: I4
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "MUL"
  -
    weight: 100
    destCh: 4
@@ -136,6 +247,21 @@ mixData:
    speedUp: 0
    speedDown: 0
    name: ""
+ -
+   weight: 0
+   destCh: 6
+   srcRaw: SC
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: REPL
+   offset: -100
+   swtch: "L5"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "LIMIT2"
  -
    weight: 100
    destCh: 7
@@ -275,30 +401,57 @@ expoData:
    curve: 
       type: 1
       value: 0
+ -
+   mode: 3
+   scale: 0
+   trimSource: 0
+   srcRaw: P1
+   chn: 4
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 50
+   name: ""
+   offset: 50
+   curve: 
+      type: 1
+      value: 0
 curves: 
    0:
       type: 0
       smooth: 1
       points: 0
-      name: ""
+      name: "LM1"
    1:
       type: 0
       smooth: 1
       points: 0
-      name: ""
-   2:
-      type: 0
-      smooth: 1
-      points: 0
-      name: ""
+      name: "LM2"
    31:
       type: 1
       smooth: 0
       points: -1
       name: "CNT"
 points: 
+   0:
+      val: -100
+   1:
+      val: -50
+   2:
+      val: -13
+   3:
+      val: 11
+   4:
+      val: 20
+   5:
+      val: -100
+   6:
+      val: -65
+   7:
+      val: -42
    8:
-      val: 1
+      val: -30
+   9:
+      val: -22
    155:
       val: -100
    158:
@@ -308,38 +461,67 @@ points:
    160:
       val: 1
 logicalSw: 
-   2:
+   0:
+      func: FUNC_VPOS
+      def: "tele(13),90"
+      andsw: "!SB0"
+      delay: 0
+      duration: 0
+   1:
       func: FUNC_VNEG
       def: "tele(18),30"
+      andsw: "!SB0"
+      delay: 0
+      duration: 0
+   2:
+      func: FUNC_VPOS
+      def: "tele(11),480"
+      andsw: "SA2"
+      delay: 0
+      duration: 0
+   3:
+      func: FUNC_VPOS
+      def: "tele(11),550"
+      andsw: "SA2"
+      delay: 0
+      duration: 0
+   4:
+      func: FUNC_VPOS
+      def: "tele(11),620"
       andsw: "SA2"
       delay: 0
       duration: 0
    63:
       func: FUNC_VPOS
-      def: "Thr,-20"
-      andsw: "SA2"
+      def: "I1,40"
+      andsw: "NONE"
       delay: 0
       duration: 0
 customFn: 
    0:
-      swtch: "SA2"
+      swtch: "SB2"
       func: LOGS
-      def: "10"
+      def: "5"
    1:
+      swtch: "L1"
+      func: PLAY_SOUND
+      def: "Robt,4"
+   2:
       swtch: "L3"
+      func: PLAY_SOUND
+      def: "Rata,4"
+   3:
+      swtch: "L2"
       func: PLAY_SOUND
       def: "Tada,2"
 flightModeData: 
    0:
       trim: 
-         1:
-            value: -40
-            mode: 0
-         2:
+         0:
             value: 2
             mode: 0
-         3:
-            value: 16
+         1:
+            value: -2
             mode: 0
       name: ""
       swtch: "NONE"
@@ -365,13 +547,13 @@ flightModeData:
          8:
             val: 0
 thrTraceSrc: Thr
-switchWarningState: AuBuCuDu
+switchWarningState: AdBuCuDu
 rssiSource: none
 rfAlarms: 
    warning: 45
    critical: 42
 thrTrimSw: 0
-potsWarnMode: WARN_OFF
+potsWarnMode: WARN_MANUAL
 jitterFilter: GLOBAL
 moduleData: 
    0:
@@ -392,7 +574,12 @@ inputNames:
       val: "Thr"
    3:
       val: "Ail"
-potsWarnEnabled: 0
+   4:
+      val: "ROL"
+potsWarnEnabled: 1
+potsWarnPosition: 
+   0:
+      val: 55
 telemetrySensors: 
    0:
       id1: 
@@ -835,11 +1022,13 @@ screens:
             0:
                sources: 
                   0:
-                     val: tele(2)
+                     val: tele(10)
                   1:
-                     val: tele(8)
+                     val: tele(11)
             1:
                sources: 
+                  0:
+                     val: tele(14)
                   1:
                      val: tele(15)
             2:
@@ -852,6 +1041,28 @@ screens:
                sources: 
                   0:
                      val: tele(22)
+                  1:
+                     val: tele(13)
+   1:
+      type: VALUES
+      u: 
+         lines: 
+            0:
+               sources: 
+                  0:
+                     val: TX_TIME
+                  1:
+                     val: tele(2)
+            1:
+               sources: 
+                  0:
+                     val: tele(+11)
+                  1:
+                     val: tele(8)
+            2:
+               sources: 
+                  0:
+                     val: tele(-11)
 view: 0
 modelRegistrationID: "*\x15*\x15!\x03%\x07"
 usbJoystickExtMode: 0
