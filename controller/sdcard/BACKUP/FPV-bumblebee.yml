@@ -51,6 +51,46 @@ mixData:
    name: ""
  -
    destCh: 0
+   srcRaw: "I3"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: REPL
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: 100
+   offset: 0
+   swtch: "SW22"
+   curve: 
+      type: 1
+      value: 55
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "EXP"
+ -
+   destCh: 0
+   srcRaw: "I3"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: REPL
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: 100
+   offset: 0
+   swtch: "SW32"
+   curve: 
+      type: 1
+      value: 70
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "EXP"
+ -
+   destCh: 0
    srcRaw: "I4"
    carryTrim: 0
    mixWarn: 0
@@ -100,6 +140,46 @@ mixData:
    speedUp: 0
    speedDown: 0
    name: ""
+ -
+   destCh: 1
+   srcRaw: "I1"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: REPL
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: 100
+   offset: 0
+   swtch: "SW22"
+   curve: 
+      type: 1
+      value: 55
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "EXP"
+ -
+   destCh: 1
+   srcRaw: "I1"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: REPL
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: 100
+   offset: 0
+   swtch: "SW32"
+   curve: 
+      type: 1
+      value: 70
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "EXP"
  -
    destCh: 1
    srcRaw: "I4"
@@ -210,6 +290,46 @@ mixData:
    name: ""
  -
    destCh: 3
+   srcRaw: "I0"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: REPL
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: 100
+   offset: 0
+   swtch: "SW22"
+   curve: 
+      type: 1
+      value: 55
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "EXP"
+ -
+   destCh: 3
+   srcRaw: "I0"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: REPL
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: 100
+   offset: 0
+   swtch: "SW32"
+   curve: 
+      type: 1
+      value: 70
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "EXP"
+ -
+   destCh: 3
    srcRaw: "I4"
    carryTrim: 0
    mixWarn: 0
@@ -292,7 +412,7 @@ mixData:
    delayDown: 0
    speedUp: 0
    speedDown: 0
-   name: "LIMIT2"
+   name: "LIM"
  -
    destCh: 7
    srcRaw: "I8"
@@ -804,9 +924,9 @@ logicalSw:
       duration: 0
 customFn: 
    0:
-      swtch: "SB2"
+      swtch: "!SA2"
       func: LOGS
-      def: "5,1"
+      def: "15,1"
    1:
       swtch: "L1"
       func: PLAY_SOUND
@@ -819,35 +939,6 @@ customFn:
       swtch: "L2"
       func: PLAY_SOUND
       def: "Tada,1,2"
-flightModeData: 
-   0:
-      trim: 
-         0:
-            value: -2
-            mode: 0
-      name: ""
-      swtch: "NONE"
-      fadeIn: 0
-      fadeOut: 0
-      gvars: 
-         0:
-            val: 0
-         1:
-            val: 0
-         2:
-            val: 0
-         3:
-            val: 0
-         4:
-            val: 0
-         5:
-            val: 0
-         6:
-            val: 0
-         7:
-            val: 0
-         8:
-            val: 0
 thrTraceSrc: Thr
 switchWarning: 
    SA:
@@ -1409,7 +1500,7 @@ modelRegistrationID: "*\x15*\x15!\x03%\x07"
 functionSwitchConfig: 2730
 functionSwitchGroup: 27285
 functionSwitchStartConfig: 340
-functionSwitchLogicalState: 33
+functionSwitchLogicalState: 36
 usbJoystickExtMode: 0
 usbJoystickIfMode: JOYSTICK
 usbJoystickCircularCut: 0
