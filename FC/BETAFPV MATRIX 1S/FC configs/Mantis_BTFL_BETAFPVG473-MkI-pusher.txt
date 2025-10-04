@@ -1,5 +1,6 @@
 defaults nosave
 
+# diff all
 
 # version
 # Betaflight / STM32G47X (SG47) 4.5.1 Apr  1 2025 / 22:44:19 (77d01ba3b) MSP API: 1.46
@@ -44,7 +45,7 @@ vtxtable powervalues 1 2 3 4 0
 vtxtable powerlabels 25 100 200 400 PIT
 
 # master
-set acc_calibration = 37,292,10,1
+set acc_calibration = -9,2406,20,1
 set fpv_mix_degrees = 20
 set blackbox_sample_rate = 1/2
 set dshot_idle_value = 750
@@ -90,9 +91,9 @@ set osd_displayport_device = AUTO
 set osd_canvas_width = 30
 set osd_canvas_height = 13
 set vtx_band = 5
-set vtx_channel = 1
+set vtx_channel = 3
 set vtx_power = 1
-set vtx_freq = 5658
+set vtx_freq = 5732
 set vcd_video_system = NTSC
 set displayport_max7456_blk = 2
 set displayport_max7456_wht = 0
@@ -117,6 +118,10 @@ profile 3
 profile 0
 
 rateprofile 0
+
+# rateprofile 0
+set thr_mid = 82
+set thr_expo = 80
 
 rateprofile 1
 
