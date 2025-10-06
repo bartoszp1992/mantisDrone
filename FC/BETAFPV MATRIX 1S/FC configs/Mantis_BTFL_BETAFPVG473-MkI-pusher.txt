@@ -1,6 +1,5 @@
 defaults nosave
 
-# diff all
 
 # version
 # Betaflight / STM32G47X (SG47) 4.5.1 Apr  1 2025 / 22:44:19 (77d01ba3b) MSP API: 1.46
@@ -65,10 +64,13 @@ set osd_warn_bitmask = 270333
 set osd_cap_alarm = 400
 set osd_vbat_pos = 2369
 set osd_link_quality_pos = 2455
+set osd_tim_2_pos = 2132
 set osd_flymode_pos = 2447
+set osd_g_force_pos = 2113
+set osd_throttle_pos = 2392
 set osd_crosshairs_pos = 2253
-set osd_ah_sbar_pos = 270
-set osd_ah_pos = 142
+set osd_ah_sbar_pos = 2254
+set osd_ah_pos = 2126
 set osd_current_pos = 2400
 set osd_craft_name_pos = 2081
 set osd_pilot_name_pos = 2095
@@ -80,6 +82,7 @@ set osd_home_dir_pos = 281
 set osd_home_dist_pos = 407
 set osd_compass_bar_pos = 106
 set osd_altitude_pos = 407
+set osd_power_pos = 2336
 set osd_warnings_pos = 2378
 set osd_battery_usage_pos = 2432
 set osd_disarmed_pos = 2347
@@ -91,9 +94,9 @@ set osd_displayport_device = AUTO
 set osd_canvas_width = 30
 set osd_canvas_height = 13
 set vtx_band = 5
-set vtx_channel = 3
+set vtx_channel = 1
 set vtx_power = 1
-set vtx_freq = 5732
+set vtx_freq = 5658
 set vcd_video_system = NTSC
 set displayport_max7456_blk = 2
 set displayport_max7456_wht = 0
