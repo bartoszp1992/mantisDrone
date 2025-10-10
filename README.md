@@ -12,7 +12,7 @@
 - **frame**
 : NEWBEEDRONE Cockroach V3 65mm Ultra Light Frame PC/PP- order at least 1 spare
 - **propellers**
-: HQ Micro Whoop Prop 31MMX2 1mm or 31MMX4 1mm- order at least 3-4 sets
+: HQ 31mm Ultralight 3-Blade Propellers (1.0mm Shaft)
 
 ## electronic
 - **FC**
