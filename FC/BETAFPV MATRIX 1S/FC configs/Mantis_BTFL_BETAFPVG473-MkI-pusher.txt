@@ -107,25 +107,25 @@ profile 0
 
 # profile 0
 set anti_gravity_gain = 0
-set throttle_boost = 3
+set throttle_boost = 20
 set p_pitch = 54
 set i_pitch = 96
-set d_pitch = 34
-set f_pitch = 162
+set d_pitch = 36
+set f_pitch = 168
 set p_roll = 51
 set i_roll = 92
-set d_roll = 30
-set f_roll = 156
+set d_roll = 31
+set f_roll = 162
 set p_yaw = 51
 set i_yaw = 92
-set f_yaw = 156
-set d_min_roll = 22
-set d_min_pitch = 25
+set f_yaw = 162
+set d_min_roll = 23
+set d_min_pitch = 27
 set feedforward_boost = 3
 set feedforward_max_rate_limit = 50
-set simplified_d_gain = 75
+set simplified_d_gain = 80
 set simplified_pi_gain = 115
-set simplified_feedforward_gain = 130
+set simplified_feedforward_gain = 135
 
 profile 1
 
