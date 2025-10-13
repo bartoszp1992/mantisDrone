@@ -9,6 +9,8 @@
 : PA12
 - **motor base**
 : PC-CF / PETG-CF
+- **tail support**
+: TPU
 
 # BOM
 
@@ -29,7 +31,7 @@
 - **motors**
 : HAPPYMODEL SE0702 KV28000- make sure to order at least 1 spare
 - **camera**
-: BETAFPV C03 FPV Micro Camera
+: CADDXFPV ant lite / Vetafpv C03
 - **batteries**
 : BETAFPV LAVA 1S 260mAh 3.8V HV 80C BT2.0 (x5) - at least one set
 - **charger**
