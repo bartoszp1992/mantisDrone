@@ -16,7 +16,7 @@ manufacturer_id BEFH
 mcu_id 0030001c5842501720303452
 signature 
 
-# name: "MANTIS"
+# name: BD2 "MANTIS"
 
 # feature
 feature TELEMETRY
@@ -100,7 +100,7 @@ set vtx_freq = 5695
 set vcd_video_system = NTSC
 set displayport_max7456_blk = 2
 set displayport_max7456_wht = 0
-set craft_name = "MANTIS"
+set craft_name = BD2 "MANTIS"
 set pilot_name = Bart SQ5SAZ
 
 profile 0

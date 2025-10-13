@@ -1,16 +1,23 @@
 # Mantis repo
 
-![Mantis photo](images/mantis1.jpg)
+![Mantis photo](images/mantis12.jpg)
 
 **"Mantis" is 1,2" printable freestyle/racing 1S tinywhoop**
 
 # 3D printing
 - **frame**
 : PA12
+- **canopy**
+: PA12
+- **FC cover**
+: PA12
 - **motor base**
 : PC-CF / PETG-CF
 - **tail support**
 : TPU
+- **sleeve**
+: any
+
 
 # BOM
 
