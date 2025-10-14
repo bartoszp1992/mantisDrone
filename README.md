@@ -1,6 +1,6 @@
 # Mantis repo
 
-![Mantis photo](images/mantis12.jpg)
+![Mantis photo](images/mantis_white01.jpg)
 
 **"Mantis" is 1,2" printable freestyle/racing 1S tinywhoop**
 
