@@ -38,7 +38,7 @@
 - **motors**
 : HAPPYMODEL SE0702 KV28000- make sure to order at least 1 spare
 - **camera**
-: CADDXFPV ant lite / Vetafpv C03
+: CADDXFPV ant lite / BETAFPV C03
 - **batteries**
 : BETAFPV LAVA 1S 260mAh 3.8V HV 80C BT2.0 (x5) - at least one set
 - **charger**
