@@ -15,7 +15,7 @@
 : PC-CF / PETG-CF
 - **tail support**
 : TPU
-- **sleeve**
+- **sleeve**(optional)
 : any
 
 
@@ -23,7 +23,7 @@
 
 ## mechanical
 - **motor base**
-: printed mantis motor base or NEWBEEDRONE Cockroach V3 Carbon Fiber Motor Base - optional part, but recommended
+: printed mantis motor base or NEWBEEDRONE Cockroach V3 Carbon Fiber Motor Base
 - **frame**
 : printed mantis frame or NEWBEEDRONE Cockroach V3 65mm Ultra Light Frame PC/PP- order at least 1 spare
 - **propellers**
@@ -31,6 +31,7 @@
 - **PA screws** (only for printed frame)
 : 4x PA M2x15 screws
 - **PA nuts** (only for printed frame)
+: 4x PA M2 nuts
 
 ## electronic
 - **FC**
