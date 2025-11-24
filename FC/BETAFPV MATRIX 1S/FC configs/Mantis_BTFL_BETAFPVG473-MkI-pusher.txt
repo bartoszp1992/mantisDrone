@@ -23,13 +23,17 @@ feature TELEMETRY
 feature LED_STRIP
 feature OSD
 
+# led
+led 0 6,0::CY:1
+
 # aux
 aux 0 0 1 1400 2100 0 0
 aux 1 1 2 925 1075 1 0
 aux 2 1 4 925 1075 1 0
 aux 3 2 2 1400 1600 0 0
-aux 4 35 3 1875 2100 0 0
-aux 5 39 0 1500 2100 0 0
+aux 4 15 0 1800 2100 0 0
+aux 5 35 3 1875 2100 0 0
+aux 6 39 0 1500 2100 0 0
 
 # vtxtable
 vtxtable bands 5
@@ -60,6 +64,7 @@ set ibata_offset = -600
 set small_angle = 180
 set gps_ublox_use_galileo = ON
 set pid_process_denom = 2
+set ledstrip_rainbow_freq = 102
 set osd_warn_bitmask = 270333
 set osd_cap_alarm = 400
 set osd_vbat_pos = 2433
@@ -94,9 +99,9 @@ set osd_displayport_device = AUTO
 set osd_canvas_width = 30
 set osd_canvas_height = 16
 set vtx_band = 5
-set vtx_channel = 3
+set vtx_channel = 1
 set vtx_power = 1
-set vtx_freq = 5732
+set vtx_freq = 5658
 set vcd_video_system = PAL
 set displayport_max7456_blk = 2
 set displayport_max7456_wht = 0
