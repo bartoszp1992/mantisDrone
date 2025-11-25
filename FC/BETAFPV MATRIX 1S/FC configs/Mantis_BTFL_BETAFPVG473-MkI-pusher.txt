@@ -48,7 +48,7 @@ vtxtable powervalues 1 2 3 4 0
 vtxtable powerlabels 25 100 200 400 PIT
 
 # master
-set acc_calibration = -28,9,28,1
+set acc_calibration = 20,4639,16,1
 set fpv_mix_degrees = 20
 set blackbox_sample_rate = 1/2
 set dshot_idle_value = 750
@@ -68,14 +68,14 @@ set ledstrip_rainbow_freq = 102
 set osd_warn_bitmask = 270333
 set osd_cap_alarm = 400
 set osd_vbat_pos = 2433
-set osd_link_quality_pos = 2519
+set osd_link_quality_pos = 2518
 set osd_tim_2_pos = 2132
 set osd_flymode_pos = 2511
 set osd_g_force_pos = 2113
-set osd_throttle_pos = 2456
+set osd_throttle_pos = 2455
 set osd_crosshairs_pos = 2285
-set osd_ah_sbar_pos = 238
-set osd_ah_pos = 110
+set osd_ah_sbar_pos = 2286
+set osd_ah_pos = 2158
 set osd_current_pos = 2464
 set osd_craft_name_pos = 2081
 set osd_pilot_name_pos = 2095
@@ -91,7 +91,7 @@ set osd_power_pos = 2400
 set osd_warnings_pos = 2442
 set osd_battery_usage_pos = 2496
 set osd_disarmed_pos = 2411
-set osd_core_temp_pos = 2488
+set osd_core_temp_pos = 2487
 set osd_stick_overlay_left_pos = 128
 set osd_stick_overlay_right_pos = 151
 set osd_stat_bitmask = 1894
