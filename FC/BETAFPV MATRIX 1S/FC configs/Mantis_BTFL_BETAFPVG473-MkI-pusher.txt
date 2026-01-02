@@ -13,7 +13,7 @@ defaults nosave
 
 board_name BETAFPVG473
 manufacturer_id BEFH
-mcu_id 0030001c5842501720303452
+mcu_id 005600335942500120323557
 signature 
 
 # name: BD2 "MANTIS"
@@ -27,13 +27,12 @@ feature OSD
 led 0 6,0::CY:1
 
 # aux
-aux 0 0 1 1400 2100 0 0
-aux 1 1 2 925 1075 1 0
-aux 2 1 4 925 1075 1 0
-aux 3 2 2 1400 1600 0 0
-aux 4 15 0 1800 2100 0 0
-aux 5 35 3 1875 2100 0 0
-aux 6 39 0 1500 2100 0 0
+aux 0 0 2 1400 2100 0 0
+aux 1 1 6 925 1125 1 0
+aux 2 1 0 925 1125 1 0
+aux 3 2 6 1375 1600 0 0
+aux 4 15 1 1875 2100 0 0
+aux 5 35 5 1875 2100 0 0
 
 # vtxtable
 vtxtable bands 5
