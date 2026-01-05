@@ -1,6 +1,5 @@
 defaults nosave
 
- diff all
 
 # version
 # Betaflight / STM32G47X (SG47) 4.5.1 Apr  1 2025 / 22:44:19 (77d01ba3b) MSP API: 1.46
@@ -30,7 +29,7 @@ led 0 6,0::CY:1
 # aux
 aux 0 0 2 1400 2100 0 0
 aux 1 1 6 925 1125 1 0
-aux 2 1 4 925 1125 1 0
+aux 2 1 0 925 1125 1 0
 aux 3 2 6 1375 1600 0 0
 aux 4 15 1 1875 2100 0 0
 aux 5 35 5 1875 2100 0 0
