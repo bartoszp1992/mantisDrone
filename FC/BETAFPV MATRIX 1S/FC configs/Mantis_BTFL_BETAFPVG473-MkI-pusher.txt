@@ -1,5 +1,6 @@
 defaults nosave
 
+# diff all
 
 # version
 # Betaflight / STM32G47X (SG47) 4.5.1 Apr  1 2025 / 22:44:19 (77d01ba3b) MSP API: 1.46
@@ -19,6 +20,7 @@ signature
 # name: BD2 "MANTIS"
 
 # feature
+feature -AIRMODE
 feature TELEMETRY
 feature LED_STRIP
 feature OSD
@@ -32,7 +34,7 @@ aux 1 1 6 925 1125 1 0
 aux 2 1 0 925 1125 1 0
 aux 3 2 6 1375 1600 0 0
 aux 4 15 10 1875 2100 0 0
-aux 5 35 5 1875 2100 0 0
+aux 5 35 0 1875 2100 0 0
 
 # vtxtable
 vtxtable bands 5
@@ -47,8 +49,7 @@ vtxtable powervalues 1 2 3 4 0
 vtxtable powerlabels 25 100 200 400 PIT
 
 # master
-set acc_trim_pitch = 1
-set acc_calibration = 20,4639,16,1
+set acc_calibration = -82,9,5,1
 set fpv_mix_degrees = 20
 set blackbox_sample_rate = 1/2
 set dshot_idle_value = 750
@@ -74,8 +75,8 @@ set osd_flymode_pos = 2511
 set osd_g_force_pos = 2113
 set osd_throttle_pos = 2455
 set osd_crosshairs_pos = 2285
-set osd_ah_sbar_pos = 2286
-set osd_ah_pos = 2158
+set osd_ah_sbar_pos = 238
+set osd_ah_pos = 110
 set osd_current_pos = 2464
 set osd_craft_name_pos = 2081
 set osd_pilot_name_pos = 2095
