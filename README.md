@@ -63,3 +63,7 @@
 : betaflight configurator
 - **radio config**
 : ExpressLRS Configurator
+
+## firmware
+If you are building remotely:
+> choose analog OSD Protocol and type **OSD_HD** in custom defines, to build firmware with both- digital and analog OSD

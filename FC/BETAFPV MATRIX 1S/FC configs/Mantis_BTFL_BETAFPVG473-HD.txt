@@ -1,0 +1,154 @@
+defaults nosave
+
+
+# version
+# Betaflight / STM32G47X (G473) 2025.12.2 Feb  8 2026 / 06:16:52 (79065c96b) MSP API: 1.47
+# config rev: e378347
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name BETAFPVG473_V2
+manufacturer_id BEFH
+mcu_id 004c002c4c43500c2034334e
+signature 
+
+# name: "DRAGONFLY"
+
+# feature
+feature -AIRMODE
+feature TELEMETRY
+feature LED_STRIP
+feature OSD
+
+# serial
+serial UART2 131073 115200 115200 0 115200
+
+# led
+led 0 6,0::CY:1
+
+# aux
+aux 0 0 2 1400 2100 0 0
+aux 1 1 6 925 1125 1 0
+aux 2 1 0 925 1125 1 0
+aux 3 2 6 1375 1600 0 0
+aux 4 15 10 1875 2100 0 0
+aux 5 35 0 1875 2100 0 0
+
+# vtxtable
+vtxtable bands 5
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BOSCAM_E E CUSTOM  5705 5685 5665 5645 5885 5905 5925 5945
+vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable powerlevels 5
+vtxtable powervalues 1 2 3 4 0
+vtxtable powerlabels 25 100 200 400 PIT
+
+# master
+set dyn_notch_count = 0
+set acc_calibration = -82,9,5,1
+set fpv_mix_degrees = 20
+set blackbox_sample_rate = 1/2
+set motor_output_reordering = 3,1,2,0,4,5,6,7
+set failsafe_delay = 10
+set failsafe_throttle = 1250
+set align_board_roll = 180
+set align_board_yaw = 90
+set bat_capacity = 250
+set vbat_max_cell_voltage = 435
+set ibata_offset = -600
+set small_angle = 180
+set gps_ublox_use_galileo = ON
+set pid_process_denom = 2
+set ledstrip_rainbow_freq = 102
+set osd_warn_bitmask = 270333
+set osd_cap_alarm = 400
+set osd_vbat_pos = 2498
+set osd_link_quality_pos = 7243
+set osd_tim_2_pos = 7211
+set osd_flymode_pos = 6680
+set osd_g_force_pos = 2080
+set osd_throttle_pos = 2434
+set osd_crosshairs_pos = 6457
+set osd_ah_sbar_pos = 6458
+set osd_ah_pos = 6330
+set osd_current_pos = 6625
+set osd_mah_drawn_pos = 385
+set osd_craft_name_pos = 6144
+set osd_pilot_name_pos = 7174
+set osd_gps_speed_pos = 5579
+set osd_gps_lon_pos = 65
+set osd_gps_lat_pos = 81
+set osd_gps_sats_pos = 5643
+set osd_home_dir_pos = 5411
+set osd_home_dist_pos = 5547
+set osd_flight_dist_pos = 1419
+set osd_compass_bar_pos = 4118
+set osd_altitude_pos = 5611
+set osd_power_pos = 289
+set osd_warnings_pos = 14837
+set osd_avg_cell_voltage_pos = 4546
+set osd_battery_usage_pos = 6657
+set osd_disarmed_pos = 6614
+set osd_core_temp_pos = 2466
+set osd_stick_overlay_left_pos = 129
+set osd_stick_overlay_right_pos = 149
+set osd_sys_goggle_voltage_pos = 129
+set osd_stat_bitmask = 1894
+set vtx_band = 5
+set vtx_channel = 1
+set vtx_power = 1
+set vtx_freq = 5658
+set displayport_max7456_blk = 2
+set displayport_max7456_wht = 0
+set craft_name = "DRAGONFLY"
+set pilot_name = Bart SQ5SAZ
+
+profile 0
+
+# profile 0
+set anti_gravity_gain = 0
+set p_pitch = 54
+set i_pitch = 96
+set d_pitch = 27
+set f_pitch = 168
+set p_roll = 51
+set i_roll = 92
+set d_roll = 23
+set f_roll = 162
+set p_yaw = 51
+set i_yaw = 92
+set f_yaw = 162
+set d_max_roll = 31
+set d_max_pitch = 36
+set simplified_d_gain = 80
+set simplified_pi_gain = 115
+set simplified_feedforward_gain = 135
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
