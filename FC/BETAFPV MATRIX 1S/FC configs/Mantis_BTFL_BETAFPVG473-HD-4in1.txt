@@ -1,10 +1,9 @@
 defaults nosave
 
-# diff all
 
 # version
-# Betaflight / STM32G47X (SG47) 4.5.1 Apr  1 2025 / 22:44:19 (77d01ba3b) MSP API: 1.46
-# config rev: cbb28a7
+# Betaflight / STM32G47X (G473) 2025.12.2 Feb  8 2026 / 06:16:52 (79065c96b) MSP API: 1.47
+# config rev: e378347
 
 # start the command batch
 batch start
@@ -12,18 +11,21 @@ batch start
 # reset configuration to default settings
 defaults nosave
 
-board_name BETAFPVG473
+board_name BETAFPVG473_V2
 manufacturer_id BEFH
-mcu_id 005600335942500120323557
+mcu_id 004c002c4c43500c2034334e
 signature 
 
-# name: BD2 "MANTIS"
+# name: "DRAGONFLY"
 
 # feature
 feature -AIRMODE
 feature TELEMETRY
 feature LED_STRIP
 feature OSD
+
+# serial
+serial UART2 131073 115200 115200 0 115200
 
 # led
 led 0 6,0::CY:1
@@ -49,86 +51,86 @@ vtxtable powervalues 1 2 3 4 0
 vtxtable powerlabels 25 100 200 400 PIT
 
 # master
+set dyn_notch_count = 0
 set acc_calibration = -82,9,5,1
 set fpv_mix_degrees = 20
 set blackbox_sample_rate = 1/2
-set dshot_idle_value = 750
 set motor_output_reordering = 3,1,2,0,4,5,6,7
 set failsafe_delay = 10
-set failsafe_off_delay = 25
 set failsafe_throttle = 1250
 set align_board_roll = 180
 set align_board_yaw = 90
 set bat_capacity = 250
 set vbat_max_cell_voltage = 435
-set ibata_offset = -600
+set ibata_scale = 550
+set ibata_offset = -100
 set small_angle = 180
 set gps_ublox_use_galileo = ON
 set pid_process_denom = 2
 set ledstrip_rainbow_freq = 102
 set osd_warn_bitmask = 270333
 set osd_cap_alarm = 400
-set osd_vbat_pos = 2433
-set osd_link_quality_pos = 2518
-set osd_tim_2_pos = 2132
-set osd_flymode_pos = 2511
-set osd_g_force_pos = 2113
-set osd_throttle_pos = 2455
-set osd_crosshairs_pos = 2285
-set osd_ah_sbar_pos = 238
-set osd_ah_pos = 110
-set osd_current_pos = 2464
-set osd_craft_name_pos = 2081
-set osd_pilot_name_pos = 2095
-set osd_gps_speed_pos = 407
-set osd_gps_lon_pos = 49
+set osd_vbat_pos = 2498
+set osd_link_quality_pos = 7243
+set osd_tim_2_pos = 7211
+set osd_flymode_pos = 6680
+set osd_g_force_pos = 2080
+set osd_throttle_pos = 2434
+set osd_crosshairs_pos = 6457
+set osd_ah_sbar_pos = 6458
+set osd_ah_pos = 6330
+set osd_current_pos = 6625
+set osd_mah_drawn_pos = 385
+set osd_craft_name_pos = 6144
+set osd_pilot_name_pos = 7174
+set osd_gps_speed_pos = 5579
+set osd_gps_lon_pos = 65
 set osd_gps_lat_pos = 81
-set osd_gps_sats_pos = 407
-set osd_home_dir_pos = 281
-set osd_home_dist_pos = 407
-set osd_compass_bar_pos = 106
-set osd_altitude_pos = 407
-set osd_power_pos = 2400
-set osd_warnings_pos = 2442
-set osd_battery_usage_pos = 2496
-set osd_disarmed_pos = 2411
-set osd_core_temp_pos = 2487
-set osd_stick_overlay_left_pos = 128
-set osd_stick_overlay_right_pos = 151
+set osd_gps_sats_pos = 5643
+set osd_home_dir_pos = 5411
+set osd_home_dist_pos = 5547
+set osd_flight_dist_pos = 1419
+set osd_compass_bar_pos = 4118
+set osd_altitude_pos = 5611
+set osd_power_pos = 289
+set osd_warnings_pos = 14837
+set osd_avg_cell_voltage_pos = 4546
+set osd_battery_usage_pos = 6657
+set osd_disarmed_pos = 6614
+set osd_core_temp_pos = 2466
+set osd_stick_overlay_left_pos = 129
+set osd_stick_overlay_right_pos = 149
+set osd_sys_goggle_voltage_pos = 129
 set osd_stat_bitmask = 1894
-set osd_displayport_device = AUTO
-set osd_canvas_width = 30
-set osd_canvas_height = 16
 set vtx_band = 5
 set vtx_channel = 1
 set vtx_power = 1
 set vtx_freq = 5658
-set vcd_video_system = PAL
 set displayport_max7456_blk = 2
 set displayport_max7456_wht = 0
-set craft_name = BD2 "MANTIS"
+set craft_name = "DRAGONFLY"
 set pilot_name = Bart SQ5SAZ
 
 profile 0
 
 # profile 0
 set anti_gravity_gain = 0
-set throttle_boost = 20
-set p_pitch = 54
-set i_pitch = 96
-set d_pitch = 36
-set f_pitch = 168
-set p_roll = 51
-set i_roll = 92
-set d_roll = 31
-set f_roll = 162
-set p_yaw = 51
-set i_yaw = 92
-set f_yaw = 162
-set d_min_roll = 23
-set d_min_pitch = 27
-set feedforward_boost = 3
-set feedforward_max_rate_limit = 50
+set throttle_boost = 0
+set p_pitch = 29
+set i_pitch = 53
+set d_pitch = 14
+set f_pitch = 92
+set p_roll = 28
+set i_roll = 50
+set d_roll = 13
+set f_roll = 89
+set p_yaw = 28
+set i_yaw = 50
+set f_yaw = 89
+set d_max_roll = 17
+set d_max_pitch = 20
+set motor_output_limit = 95
+set simplified_master_multiplier = 55
 set simplified_d_gain = 80
 set simplified_pi_gain = 115
 set simplified_feedforward_gain = 135

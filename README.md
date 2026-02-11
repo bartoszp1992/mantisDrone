@@ -8,7 +8,7 @@
 - **frame**
 : PA12
 - **canopy**
-: PA12
+: PA12 / PP
 - **FC cover**
 : PA12
 - **motor base**
@@ -27,7 +27,7 @@
 - **frame**
 : printed mantis frame or NEWBEEDRONE Cockroach V3 65mm Ultra Light Frame PC/PP- order at least 1 spare
 - **propellers**
-: HQ 31mm Ultralight 3-Blade Propellers (1.0mm Shaft)
+: HQ 31mm Ultralight 3-Blade Propellers (1.0mm Shaft) or NBD Azi 3 blade 31mm
 - **PA screws** (only for printed frame)
 : 4x PA M2x15 screws
 - **PA nuts** (only for printed frame)
@@ -35,12 +35,12 @@
 
 ## electronic
 - **FC**
-: BETAFPV Matrix 1S Brushless Flight Controller (5IN1)
+: BETAFPV Matrix 1S Brushless Flight Controller (5IN1 for SD or 4IN1 for HD)
 - **motors**
-: HAPPYMODEL SE0702 KV28000- make sure to order at least 1 spare
+: HAPPYMODEL SE0702 KV28000(for SD) or BETAFPV 0802SE KV19500(for HD)
 - **camera**
-: CADDXFPV ant lite / BETAFPV C03
-> order also CADDXFPV Camera Accessories OSD Menu Board for ant lite camera, and switch video mode to PAL
+: CADDXFPV ant lite / BETAFPV C03(SD) or P1 air unit(HD)
+> for SD: order also CADDXFPV Camera Accessories OSD Menu Board for ant lite camera, and switch video mode to PAL
 - **batteries**
 : BETAFPV LAVA 1S 260mAh 3.8V HV 80C BT2.0 (x5) - at least one set
 - **charger**
