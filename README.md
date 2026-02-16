@@ -37,7 +37,7 @@
 - **FC**
 : BETAFPV Matrix 1S Brushless Flight Controller (5IN1 for SD or 4IN1 for HD)
 - **motors**
-: HAPPYMODEL SE0702 KV28000(for SD) or BETAFPV 0802SE KV19500(for HD)
+: HAPPYMODEL SE0702 KV28000
 - **camera**
 : CADDXFPV ant lite / BETAFPV C03(SD) or P1 air unit(HD)
 > for SD: order also CADDXFPV Camera Accessories OSD Menu Board for ant lite camera, and switch video mode to PAL
@@ -47,6 +47,8 @@
 : BETAFPV 6 Ports 1S Battery Charger (optionally with adapter)
 - **cable**
 : USB-C cable for communication
+- **VTX**
+: Foxeer reaper nano(only for SD 4in1)
 
 ## control
 - **controller**
@@ -54,7 +56,7 @@
 - **batteries**
 : 2x 18650 any branded Li-Ion cells for controller supply
 - **goggle**
-: BETAFPV VR03 or any other analog goggles
+: BETAFPV VR03 or any other analog goggles for SD
 - **memory**
 : 32G SDcard if you want to record your flights
 
