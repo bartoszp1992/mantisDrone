@@ -16,7 +16,7 @@ manufacturer_id BEFH
 mcu_id 004c002c4c43500c2034334e
 signature 
 
-# name: "DRAGONFLY"
+# name: BD2 "DRAGONFLY"
 
 # feature
 feature -AIRMODE
@@ -82,7 +82,7 @@ set osd_ah_pos = 6330
 set osd_current_pos = 6625
 set osd_mah_drawn_pos = 385
 set osd_craft_name_pos = 6144
-set osd_pilot_name_pos = 7174
+set osd_pilot_name_pos = 7181
 set osd_gps_speed_pos = 5579
 set osd_gps_lon_pos = 65
 set osd_gps_lat_pos = 81
@@ -108,32 +108,34 @@ set vtx_power = 1
 set vtx_freq = 5658
 set displayport_max7456_blk = 2
 set displayport_max7456_wht = 0
-set craft_name = "DRAGONFLY"
-set pilot_name = Bart SQ5SAZ
+set craft_name = BD2 "DRAGONFLY"
+set pilot_name = Bart
 
 profile 0
 
 # profile 0
 set anti_gravity_gain = 0
 set throttle_boost = 0
-set p_pitch = 29
-set i_pitch = 53
-set d_pitch = 14
-set f_pitch = 92
-set p_roll = 28
-set i_roll = 50
-set d_roll = 13
-set f_roll = 89
-set p_yaw = 28
-set i_yaw = 50
-set f_yaw = 89
-set d_max_roll = 17
-set d_max_pitch = 20
+set p_pitch = 37
+set i_pitch = 67
+set d_pitch = 6
+set f_pitch = 131
+set p_roll = 36
+set i_roll = 64
+set d_roll = 8
+set f_roll = 125
+set p_yaw = 36
+set i_yaw = 64
+set f_yaw = 125
+set d_max_roll = 10
+set d_max_pitch = 8
 set motor_output_limit = 95
-set simplified_master_multiplier = 55
-set simplified_d_gain = 80
+set simplified_master_multiplier = 70
+set simplified_d_gain = 40
 set simplified_pi_gain = 115
-set simplified_feedforward_gain = 135
+set simplified_d_max_gain = 60
+set simplified_feedforward_gain = 150
+set simplified_pitch_d_gain = 70
 
 profile 1
 
