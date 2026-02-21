@@ -1,5 +1,6 @@
 defaults nosave
 
+# diff all
 
 # version
 # Betaflight / STM32G47X (G473) 2025.12.2 Feb  8 2026 / 06:16:52 (79065c96b) MSP API: 1.47
@@ -16,7 +17,7 @@ manufacturer_id BEFH
 mcu_id 004c002c4c43500c2034334e
 signature 
 
-# name: BD2 "DRAGONFLY"
+# name: DRGF convertible
 
 # feature
 feature -AIRMODE
@@ -34,8 +35,8 @@ led 0 6,0::CY:1
 aux 0 0 2 1400 2100 0 0
 aux 1 1 6 925 1125 1 0
 aux 2 1 0 925 1125 1 0
-aux 3 2 6 1375 1600 0 0
-aux 4 15 10 1875 2100 0 0
+aux 3 15 10 1875 2100 0 0
+aux 4 28 6 1375 1600 0 0
 aux 5 35 0 1875 2100 0 0
 
 # vtxtable
@@ -98,8 +99,8 @@ set osd_avg_cell_voltage_pos = 4546
 set osd_battery_usage_pos = 6657
 set osd_disarmed_pos = 6614
 set osd_core_temp_pos = 2466
-set osd_stick_overlay_left_pos = 129
-set osd_stick_overlay_right_pos = 149
+set osd_stick_overlay_left_pos = 2176
+set osd_stick_overlay_right_pos = 3214
 set osd_sys_goggle_voltage_pos = 129
 set osd_stat_bitmask = 1894
 set vtx_band = 5
@@ -108,7 +109,7 @@ set vtx_power = 1
 set vtx_freq = 5658
 set displayport_max7456_blk = 2
 set displayport_max7456_wht = 0
-set craft_name = BD2 "DRAGONFLY"
+set craft_name = DRGF convertible
 set pilot_name = Bart
 
 profile 0
