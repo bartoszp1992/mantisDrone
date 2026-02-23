@@ -29,27 +29,17 @@ serial UART1 8192 115200 57600 0 115200
 serial UART2 0 115200 57600 0 115200
 
 # led
-led 0 6,0::A:1
-led 1 6,1::CTO:11
-led 2 6,2::CTO:11
-led 3 6,3::CTO:11
-led 4 6,4::CTO:11
-led 5 6,5::CB:2
-led 6 8,5::CB:2
-led 7 8,4::CTO:11
-led 8 8,3::CTO:11
-led 9 8,2::CTO:11
-led 10 8,1::CTO:11
-led 11 8,0::A:1
+led 0 7,15::AB:11
+led 1 8,15::AB:11
 
 # color
 color 7 208,0,255
-color 11 295,0,255
+color 11 271,125,255
 color 13 269,0,255
 
 # mode_color
-mode_color 6 0 10
-mode_color 6 1 12
+mode_color 6 0 12
+mode_color 6 1 6
 
 # aux
 aux 0 0 2 1400 2100 0 0
