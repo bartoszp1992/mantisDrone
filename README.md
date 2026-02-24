@@ -7,6 +7,8 @@
 # 3D printing
 - **frame**
 : PA12
+- **ducts convertible**
+: PC
 - **canopy**
 : PA12 / PP
 - **FC cover**
