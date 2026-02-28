@@ -63,6 +63,7 @@ vtxtable powervalues 25 100 200 400
 vtxtable powerlabels 25 100 200 350
 
 # master
+set acc_trim_pitch = 6
 set acc_calibration = -82,9,5,1
 set fpv_mix_degrees = 40
 set blackbox_sample_rate = 1/2
