@@ -153,6 +153,10 @@ profile 0
 
 rateprofile 0
 
+# rateprofile 0
+set thr_mid = 40
+set thr_hover = 55
+
 rateprofile 1
 
 rateprofile 2
