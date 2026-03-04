@@ -1,6 +1,5 @@
 defaults nosave
 
-# diff all
 
 # version
 # Betaflight / STM32G47X (G473) 2025.12.2 Feb  8 2026 / 06:16:52 (79065c96b) MSP API: 1.47
@@ -120,28 +119,23 @@ set pilot_name = Bart
 profile 0
 
 # profile 0
-set anti_gravity_gain = 0
-set throttle_boost = 0
-set p_pitch = 49
-set i_pitch = 88
-set d_pitch = 6
-set f_pitch = 131
-set p_roll = 47
-set i_roll = 84
-set d_roll = 8
-set f_roll = 125
-set p_yaw = 47
-set i_yaw = 84
-set f_yaw = 125
-set d_max_roll = 10
-set d_max_pitch = 8
-set motor_output_limit = 95
-set simplified_master_multiplier = 70
-set simplified_d_gain = 40
-set simplified_pi_gain = 150
-set simplified_d_max_gain = 60
-set simplified_feedforward_gain = 150
-set simplified_pitch_d_gain = 70
+set p_pitch = 58
+set i_pitch = 105
+set d_pitch = 11
+set f_pitch = 175
+set p_roll = 56
+set i_roll = 100
+set d_roll = 10
+set f_roll = 168
+set p_yaw = 56
+set i_yaw = 100
+set f_yaw = 168
+set d_max_roll = 11
+set d_max_pitch = 13
+set simplified_d_gain = 35
+set simplified_pi_gain = 125
+set simplified_d_max_gain = 35
+set simplified_feedforward_gain = 140
 
 profile 1
 
