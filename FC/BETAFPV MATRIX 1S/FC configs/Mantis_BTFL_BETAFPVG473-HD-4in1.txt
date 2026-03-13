@@ -1,5 +1,6 @@
 defaults nosave
 
+# diff all
 
 # version
 # Betaflight / STM32G47X (G473) 2025.12.2 Feb  8 2026 / 06:16:52 (79065c96b) MSP API: 1.47
@@ -76,8 +77,8 @@ set ledstrip_rainbow_freq = 102
 set osd_warn_bitmask = 270333
 set osd_cap_alarm = 400
 set osd_vbat_pos = 2498
-set osd_link_quality_pos = 7243
-set osd_tim_2_pos = 7211
+set osd_link_quality_pos = 7247
+set osd_tim_2_pos = 7215
 set osd_flymode_pos = 6680
 set osd_g_force_pos = 2080
 set osd_throttle_pos = 2434
@@ -87,7 +88,7 @@ set osd_ah_pos = 6330
 set osd_current_pos = 6625
 set osd_mah_drawn_pos = 385
 set osd_craft_name_pos = 6144
-set osd_pilot_name_pos = 7181
+set osd_pilot_name_pos = 7185
 set osd_gps_speed_pos = 5579
 set osd_gps_lon_pos = 65
 set osd_gps_lat_pos = 81
@@ -119,6 +120,7 @@ set pilot_name = Bart
 profile 0
 
 # profile 0
+set throttle_boost = 25
 set p_pitch = 58
 set i_pitch = 105
 set d_pitch = 11
