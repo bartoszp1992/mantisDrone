@@ -8,17 +8,15 @@
 - **frame**
 : PA12
 - **ducts convertible**
-: PC
+: PC/PETG
 - **canopy**
-: PA12 / PP
+: PA12
 - **FC cover**
 : PA12
-- **motor base**
+- **stiffener**
 : PC-CF / PETG-CF
 - **tail support**
 : TPU
-- **sleeve**(optional)
-: any
 
 
 # BOM
