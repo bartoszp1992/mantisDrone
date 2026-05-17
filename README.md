@@ -13,7 +13,7 @@
 : PA12
 - **FC cover**
 : PA12
-- **stiffener**
+- **base**
 : PC-CF / PETG-CF
 - **tail support**
 : TPU
@@ -22,20 +22,20 @@
 # BOM
 
 ## mechanical
-- **motor base**
-: printed mantis motor base or NEWBEEDRONE Cockroach V3 Carbon Fiber Motor Base
+- **base**
+: printed basebase
 - **frame**
-: printed mantis frame or NEWBEEDRONE Cockroach V3 65mm Ultra Light Frame PC/PP- order at least 1 spare
+: printed mantis frame
 - **propellers**
 : HQ 31mm Ultralight 3-Blade Propellers (1.0mm Shaft) or NBD Azi 3 blade 31mm
-- **PA screws** (only for printed frame)
+- **PA screws**
 : 4x PA M2x15 screws
-- **PA nuts** (only for printed frame)
+- **PA nuts**
 : 4x PA M2 nuts
 
 ## electronic
 - **FC**
-: BETAFPV Matrix 1S Brushless Flight Controller (5IN1 for SD or 4IN1 for HD)
+: BETAFPV Matrix 1S Brushless Flight Controller 4IN1
 - **motors**
 : HAPPYMODEL SE0702 KV28000
 - **camera**
