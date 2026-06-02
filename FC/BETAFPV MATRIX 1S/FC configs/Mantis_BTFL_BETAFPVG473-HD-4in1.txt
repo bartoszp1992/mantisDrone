@@ -165,3 +165,4 @@ rateprofile 3
 rateprofile 0
 
 # save configuration
+save
