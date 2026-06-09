@@ -1,6 +1,5 @@
 defaults nosave
 
-# diff all
 
 # version
 # Betaflight / STM32G47X (G473) 2025.12.2 Feb  8 2026 / 06:16:52 (79065c96b) MSP API: 1.47
@@ -22,7 +21,6 @@ signature
 # feature
 feature -AIRMODE
 feature TELEMETRY
-feature 3D
 feature LED_STRIP
 feature OSD
 
