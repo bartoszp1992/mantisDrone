@@ -1,0 +1,171 @@
+defaults nosave
+
+# diff all
+
+# version
+# Betaflight / STM32G47X (SG47) 4.5.1 Dec 11 2025 / 08:14:05 (77d01ba3b) MSP API: 1.46
+# config rev: 111d518
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name BETAFPVG473
+manufacturer_id BEFH
+mcu_id 001b00273235510f30303938
+signature 
+
+# name: BD3 "Lacewing"
+
+# feature
+feature -AIRMODE
+feature TELEMETRY
+feature LED_STRIP
+feature OSD
+
+# serial
+serial 0 131072 115200 57600 0 115200
+serial 3 131073 115200 57600 0 115200
+
+# led
+led 0 7,15::AB:0
+led 1 8,15::AB:0
+
+# mode_color
+mode_color 6 0 11
+mode_color 6 1 6
+
+# aux
+aux 0 0 1 1200 2100 0 0
+aux 1 1 2 900 1200 1 0
+aux 2 0 4 900 1300 1 0
+aux 3 0 0 1700 2100 1 0
+aux 4 6 7 900 1300 0 0
+aux 5 27 4 1700 2100 1 0
+aux 6 27 0 900 1300 1 0
+aux 7 0 4 900 1300 1 0
+aux 8 0 0 1700 2100 1 0
+aux 9 15 6 1700 2100 0 0
+aux 10 28 2 900 1700 0 0
+aux 11 35 4 1700 2100 1 0
+aux 12 35 0 1700 2100 1 0
+aux 13 39 3 1700 2100 1 0
+aux 14 49 7 1700 2100 0 0
+
+# master
+set dyn_notch_count = 0
+set dyn_notch_q = 500
+set acc_calibration = -82,9,5,1
+set fpv_mix_degrees = 20
+set blackbox_sample_rate = 1/16
+set blackbox_disable_pids = ON
+set blackbox_disable_setpoint = ON
+set blackbox_disable_gyro = ON
+set blackbox_disable_gyrounfilt = ON
+set blackbox_disable_rpm = ON
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
+set motor_output_reordering = 3,1,2,0,4,5,6,7
+set failsafe_delay = 10
+set failsafe_throttle = 1250
+set failsafe_switch_mode = STAGE2
+set align_board_roll = 180
+set align_board_yaw = 180
+set bat_capacity = 280
+set vbat_max_cell_voltage = 435
+set vbat_min_cell_voltage = 310
+set vbat_warning_cell_voltage = 340
+set ibata_scale = 550
+set ibata_offset = -100
+set 3d_deadband_low = 1400
+set 3d_deadband_high = 1600
+set 3d_neutral = 1500
+set small_angle = 180
+set pid_process_denom = 2
+set ledstrip_rainbow_freq = 102
+set osd_warn_bitmask = 270329
+set osd_cap_alarm = 1900
+set osd_tim1 = 5120
+set osd_tim2 = 5121
+set osd_vbat_pos = 449
+set osd_link_quality_pos = 7245
+set osd_tim_2_pos = 7213
+set osd_flymode_pos = 6680
+set osd_g_force_pos = 2080
+set osd_throttle_pos = 3181
+set osd_crosshairs_pos = 313
+set osd_ah_sbar_pos = 6458
+set osd_ah_pos = 6330
+set osd_current_pos = 6625
+set osd_mah_drawn_pos = 6529
+set osd_craft_name_pos = 6144
+set osd_pilot_name_pos = 7176
+set osd_gps_speed_pos = 440
+set osd_gps_lon_pos = 65
+set osd_gps_lat_pos = 81
+set osd_gps_sats_pos = 1549
+set osd_home_dir_pos = 1315
+set osd_home_dist_pos = 1485
+set osd_flight_dist_pos = 1453
+set osd_compass_bar_pos = 22
+set osd_altitude_pos = 1517
+set osd_power_pos = 289
+set osd_warnings_pos = 14838
+set osd_avg_cell_voltage_pos = 6208
+set osd_battery_usage_pos = 2561
+set osd_disarmed_pos = 6614
+set osd_core_temp_pos = 2466
+set osd_stick_overlay_left_pos = 129
+set osd_stick_overlay_right_pos = 149
+set osd_sys_goggle_voltage_pos = 129
+set osd_stat_bitmask = 397246
+set osd_profile = 2
+set system_hse_mhz = 0
+set debug_mode = RX_SIGNAL_LOSS
+set craft_name = BD3 "Lacewing"
+set pilot_name = Bart SQ5SAZ
+
+profile 0
+
+# profile 0
+set throttle_boost = 30
+set p_pitch = 25
+set i_pitch = 46
+set d_pitch = 10
+set f_pitch = 68
+set p_roll = 24
+set i_roll = 44
+set d_roll = 8
+set f_roll = 66
+set p_yaw = 24
+set i_yaw = 44
+set f_yaw = 66
+set d_min_roll = 6
+set d_min_pitch = 7
+set simplified_master_multiplier = 55
+set simplified_d_gain = 40
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
