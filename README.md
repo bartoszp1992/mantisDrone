@@ -68,7 +68,8 @@
 
 ## firmware
 If you are building remotely:
-> choose analog OSD Protocol and type **OSD_HD** in custom defines, to build firmware with both- digital and analog OSD
+> choose analog OSD Protocol and type **OSD_HD** in custom defines, to build firmware with both- digital and analog OSD 
+> In other options add **Magnetometers**, **Position Hold** and **Altitude Hold**
 
 Firmware notice
 
