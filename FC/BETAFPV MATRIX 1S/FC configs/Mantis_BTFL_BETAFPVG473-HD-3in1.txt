@@ -1,10 +1,9 @@
 defaults nosave
 
-# diff all
 
 # version
-# Betaflight / STM32G47X (SG47) 4.5.1 Dec 11 2025 / 08:14:05 (77d01ba3b) MSP API: 1.46
-# config rev: 111d518
+# Betaflight / STM32G47X (G473) 2025.12.2 Jul 30 2026 / 19:03:24 (79065c96b) MSP API: 1.47
+# config rev: e378347
 
 # start the command batch
 batch start
@@ -21,13 +20,14 @@ signature
 
 # feature
 feature -AIRMODE
+feature GPS
 feature TELEMETRY
 feature LED_STRIP
 feature OSD
 
 # serial
-serial 0 131072 115200 57600 0 115200
-serial 3 131073 115200 57600 0 115200
+serial UART2 2 115200 57600 0 115200
+serial UART4 131073 115200 57600 0 115200
 
 # led
 led 0 7,15::AB:0
@@ -38,15 +38,15 @@ mode_color 6 0 11
 mode_color 6 1 6
 
 # aux
-aux 0 0 1 1200 2100 0 0
-aux 1 1 2 900 1200 1 0
-aux 2 0 4 900 1300 1 0
-aux 3 0 0 1700 2100 1 0
+aux 0 0 1 1300 2100 0 0
+aux 1 1 2 900 1300 1 0
+aux 2 3 4 900 1300 1 0
+aux 3 3 0 1700 2100 1 0
 aux 4 6 7 900 1300 0 0
 aux 5 27 4 1700 2100 1 0
 aux 6 27 0 900 1300 1 0
-aux 7 0 4 900 1300 1 0
-aux 8 0 0 1700 2100 1 0
+aux 7 11 4 900 1300 1 0
+aux 8 11 0 1700 2100 1 0
 aux 9 15 6 1700 2100 0 0
 aux 10 28 2 900 1700 0 0
 aux 11 35 4 1700 2100 1 0
@@ -72,6 +72,7 @@ set motor_output_reordering = 3,1,2,0,4,5,6,7
 set failsafe_delay = 10
 set failsafe_throttle = 1250
 set failsafe_switch_mode = STAGE2
+set failsafe_procedure = GPS-RESCUE
 set align_board_roll = 180
 set align_board_yaw = 180
 set bat_capacity = 280
@@ -84,6 +85,8 @@ set 3d_deadband_low = 1400
 set 3d_deadband_high = 1600
 set 3d_neutral = 1500
 set small_angle = 180
+set gps_rescue_alt_mode = CURRENT_ALT
+set gps_rescue_initial_climb = 2
 set pid_process_denom = 2
 set ledstrip_rainbow_freq = 102
 set osd_warn_bitmask = 270329
@@ -99,18 +102,18 @@ set osd_throttle_pos = 3181
 set osd_crosshairs_pos = 313
 set osd_ah_sbar_pos = 6458
 set osd_ah_pos = 6330
-set osd_current_pos = 6625
+set osd_current_pos = 2529
 set osd_mah_drawn_pos = 6529
 set osd_craft_name_pos = 6144
 set osd_pilot_name_pos = 7176
-set osd_gps_speed_pos = 440
+set osd_gps_speed_pos = 6584
 set osd_gps_lon_pos = 65
 set osd_gps_lat_pos = 81
 set osd_gps_sats_pos = 1549
 set osd_home_dir_pos = 1315
 set osd_home_dist_pos = 1485
 set osd_flight_dist_pos = 1453
-set osd_compass_bar_pos = 22
+set osd_compass_bar_pos = 6166
 set osd_altitude_pos = 1517
 set osd_power_pos = 289
 set osd_warnings_pos = 14838
@@ -127,26 +130,13 @@ set system_hse_mhz = 0
 set debug_mode = RX_SIGNAL_LOSS
 set craft_name = BD3 "Lacewing"
 set pilot_name = Bart SQ5SAZ
+set ap_hover_throttle = 1450
+set ap_throttle_max = 1750
 
 profile 0
 
 # profile 0
 set throttle_boost = 30
-set p_pitch = 25
-set i_pitch = 46
-set d_pitch = 10
-set f_pitch = 68
-set p_roll = 24
-set i_roll = 44
-set d_roll = 8
-set f_roll = 66
-set p_yaw = 24
-set i_yaw = 44
-set f_yaw = 66
-set d_min_roll = 6
-set d_min_pitch = 7
-set simplified_master_multiplier = 55
-set simplified_d_gain = 40
 
 profile 1
 
