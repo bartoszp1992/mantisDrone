@@ -108,7 +108,7 @@ Betaflight repository, tag `2025.12.2`
 that source version).
 
 Betaflight is distributed under the GNU General Public License version 3.
-A copy of the GNU GPL v3 is included in this repository as `GPL-3.0.txt`.
+A copy of the GNU GPL v3 is included in this repository as `LICENSE.txt`.
 
 ### Bluejay
 
@@ -137,4 +137,5 @@ This repository does not claim ownership of Betaflight or Bluejay and is
 not affiliated with or endorsed by either project.
 
 [Betaflight](https://github.com/betaflight/betaflight/tree/2025.12.2)
+
 [Bluejay](https://github.com/bird-sanctuary/bluejay/tree/v0.19.2)
