@@ -29,17 +29,23 @@
 : 4x PA M2x15 screws
 - **PA nuts**
 : 4x PA M2 nuts
+- 2x additional M2 virboinsulators
+: for reinforced canopy
 
 # electronic
 - **FC**
-: BETAFPV Matrix 1S Brushless Flight Controller 4IN1
-- **motors**
+: BETAFPV Matrix 1S Brushless Flight Controller 4IN1/3IN1
+- **motors 1.2"**
 : HAPPYMODEL SE0702 KV28000
+- **motors 1.6"**
+: BETAFPV 0802 Brushless Motors (2026) Racing
 - **camera**
 : CADDXFPV ant lite / BETAFPV C03(SD) or P1 air unit(HD)
 > for SD: order also CADDXFPV Camera Accessories OSD Menu Board for ant lite camera, and switch video mode to PAL
-- **batteries**
-: BETAFPV LAVA 1S 260mAh 3.8V HV 80C BT2.0 (x5) - at least one set
+- **batteries 1.2"**
+: BETAFPV LAVA II 1S 280mAh 3.8V HV
+- **batteries 1.6"**
+: BETAFPV LAVA II 1S 480mAh 3.8V HV
 - **charger**
 : BETAFPV 6 Ports 1S Battery Charger (optionally with adapter)
 - **cable**
