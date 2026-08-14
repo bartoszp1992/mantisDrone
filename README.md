@@ -11,6 +11,8 @@
 : PC/PETG
 - **canopy**
 : PA12
+- **canopy-R
+: PP
 - **FC cover**
 : PA12
 - **base**
@@ -29,8 +31,6 @@
 : 4x PA M2x15 screws
 - **PA nuts**
 : 4x PA M2 nuts
-- 2x additional M2 virboinsulators
-: for reinforced canopy
 
 # electronic
 - **FC**
