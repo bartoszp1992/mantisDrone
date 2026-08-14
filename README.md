@@ -11,8 +11,6 @@
 : PC/PETG
 - **canopy**
 : PA12
-- **canopy-R
-: PP
 - **FC cover**
 : PA12
 - **base**
