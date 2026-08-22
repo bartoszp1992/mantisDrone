@@ -139,6 +139,7 @@ profile 0
 
 # profile 0
 set throttle_boost = 30
+set dyn_idle_min_rpm = 44
 
 profile 1
 
