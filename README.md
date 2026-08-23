@@ -10,11 +10,11 @@
 - **ducts convertible**
 : PC/PETG
 - **canopy**
-: PA12
+: PA12/TPU
 - **FC cover**
 : PA12
 - **base**
-: PC-CF / PETG-CF
+: PC-CF/PETG-CF
 - **tail support**
 : TPU
 
