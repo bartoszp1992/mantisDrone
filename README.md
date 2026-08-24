@@ -78,15 +78,16 @@ This repository includes third-party firmware binaries used by this FPV drone.
 
 ### Betaflight
 
-Version: `2025.12.2`
+Version: `2025.12.2`, `2025.12.4`
 
 Included firmware:
 
 - `betaflight_2025.12.2_STM32G474_BETAFPVG473_ccb6e7f3.hex`
 - `betaflight_2025.12.2_STM32G474_BETAFPVG473_V2_aa260427.hex`
+- `betaflight_2025.12.4_STM32G474_BETAFPVG473_V2_532cac95.hex`
 
 These firmware files were generated using the official Betaflight Cloud
-Build service from Betaflight `2025.12.2`.
+Build service from Betaflight `2025.12.2` or `2025.12.4`
 
 Flight controller targets:
 
@@ -107,9 +108,7 @@ Betaflight build system.
 
 Corresponding source:
 
-Betaflight repository, tag `2025.12.2`
-(including the `src/config` target configuration submodule referenced by
-that source version).
+https://github.com/betaflight/betaflight,  tag `2025.12.2` / `2025.12.4`
 
 Betaflight is distributed under the GNU General Public License version 3.
 A copy of the GNU GPL v3 is included in this repository as `LICENSE.txt`.
