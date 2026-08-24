@@ -55,12 +55,12 @@ vtxtable band 2 BOSCAM_B B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
 vtxtable band 3 BOSCAM_E E CUSTOM  5705 5685 5665 5645 5885 5905 5925 5945
 vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
 vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
-vtxtable powerlevels 4
-vtxtable powervalues 25 100 200 400
-vtxtable powerlabels 25 100 200 350
+vtxtable powerlevels 5
+vtxtable powervalues 1 2 3 4 0
+vtxtable powerlabels 25 100 200 400 PIT
 
 # master
-set dyn_notch_count = 1
+set dyn_notch_count = 0
 set dyn_notch_q = 500
 set acc_trim_pitch = 6
 set acc_calibration = -82,9,5,1
@@ -73,7 +73,7 @@ set motor_output_reordering = 3,1,2,0,4,5,6,7
 set failsafe_delay = 10
 set failsafe_throttle = 1250
 set align_board_roll = 180
-set align_board_yaw = 180
+set align_board_yaw = 225
 set bat_capacity = 250
 set vbat_max_cell_voltage = 435
 set ibata_scale = 550
@@ -135,6 +135,22 @@ profile 0
 
 # profile 0
 set throttle_boost = 25
+set p_pitch = 32
+set i_pitch = 58
+set d_pitch = 13
+set f_pitch = 87
+set p_roll = 31
+set i_roll = 56
+set d_roll = 14
+set f_roll = 84
+set p_yaw = 31
+set i_yaw = 56
+set f_yaw = 84
+set d_max_roll = 19
+set d_max_pitch = 18
+set simplified_master_multiplier = 70
+set simplified_d_gain = 70
+set simplified_pitch_d_gain = 80
 
 profile 1
 
