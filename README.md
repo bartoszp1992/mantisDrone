@@ -80,7 +80,7 @@ This repository includes third-party firmware binaries used by this FPV drone.
 
 Versions: 
 - `2025.12.2`
-- `2025.6.1`
+- `2026.6.1`
 
 Included firmware:
 
