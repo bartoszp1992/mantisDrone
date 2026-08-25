@@ -143,5 +143,6 @@ This repository does not claim ownership of Betaflight or Bluejay and is
 not affiliated with or endorsed by either project.
 
 [Betaflight](https://github.com/betaflight/betaflight/tree/2025.12.2)
+[Betaflight](https://github.com/betaflight/betaflight/tree/2026.6.1)
 
 [Bluejay](https://github.com/bird-sanctuary/bluejay/tree/v0.19.2)
