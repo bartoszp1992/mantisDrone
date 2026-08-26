@@ -67,6 +67,10 @@
 - **radio config**
 : ExpressLRS Configurator
 
+# tips
+- use vibroinsulator to mount canopy tail to prevent random sliding
+- use half of the vibroinsulator as a pad under the front of the canopy to minimize the jello effect
+
 # firmware
 If you are building remotely:
 > choose analog OSD Protocol and type **OSD_HD** in custom defines, to build firmware with both- digital and analog OSD 
