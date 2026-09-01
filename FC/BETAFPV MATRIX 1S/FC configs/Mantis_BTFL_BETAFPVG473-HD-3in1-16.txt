@@ -16,7 +16,7 @@ manufacturer_id BEFH
 mcu_id 001b00273235510f30303938
 signature 
 
-# name: BD2 "MicroStar"
+# name: BD2 "Mantis" HD
 
 # feature
 feature -AIRMODE
@@ -55,16 +55,21 @@ aux 13 39 3 1700 2100 1 0
 aux 14 49 7 1700 2100 0 0
 
 # master
-set dyn_notch_count = 0
-set dyn_notch_q = 500
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 650
+set dyn_notch_q = 750
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 650
+set acc_trim_pitch = 1
 set acc_calibration = -82,9,5,1
 set fpv_mix_degrees = 20
 set blackbox_sample_rate = 1/1
-set blackbox_disable_pids = ON
-set blackbox_disable_setpoint = ON
-set blackbox_disable_gyro = ON
-set blackbox_disable_gyrounfilt = ON
-set blackbox_disable_rpm = ON
+set blackbox_disable_rc = ON
+set blackbox_disable_bat = ON
+set blackbox_disable_mag = ON
+set blackbox_disable_alt = ON
+set blackbox_disable_rssi = ON
+set blackbox_disable_attitude = ON
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
 set motor_poles = 12
@@ -76,7 +81,7 @@ set failsafe_procedure = GPS-RESCUE
 set align_board_roll = 180
 set align_board_yaw = 180
 set bat_capacity = 480
-set vbat_max_cell_voltage = 435
+set vbat_max_cell_voltage = 440
 set vbat_min_cell_voltage = 310
 set vbat_warning_cell_voltage = 340
 set ibata_scale = 550
@@ -89,14 +94,14 @@ set gps_rescue_alt_mode = CURRENT_ALT
 set gps_rescue_initial_climb = 2
 set gps_rescue_allow_arming_without_fix = ON
 set pos_hold_without_mag = ON
-set pid_process_denom = 2
+set simplified_gyro_filter_multiplier = 130
 set ledstrip_rainbow_freq = 102
 set osd_warn_bitmask = 270329
 set osd_cap_alarm = 1900
 set osd_tim1 = 5120
 set osd_tim2 = 5121
 set osd_vbat_pos = 449
-set osd_link_quality_pos = 7245
+set osd_link_quality_pos = 3149
 set osd_tim_2_pos = 7213
 set osd_flymode_pos = 2584
 set osd_g_force_pos = 2080
@@ -116,7 +121,7 @@ set osd_home_dir_pos = 7459
 set osd_home_dist_pos = 1485
 set osd_flight_dist_pos = 1453
 set osd_compass_bar_pos = 6166
-set osd_altitude_pos = 1517
+set osd_altitude_pos = 5613
 set osd_power_pos = 289
 set osd_warnings_pos = 14838
 set osd_avg_cell_voltage_pos = 14400
@@ -129,8 +134,9 @@ set osd_sys_goggle_voltage_pos = 129
 set osd_stat_bitmask = 397246
 set osd_profile = 2
 set system_hse_mhz = 0
-set debug_mode = RX_SIGNAL_LOSS
-set craft_name = BD2 "MicroStar"
+set debug_mode = FFT_FREQ
+set rpm_filter_harmonics = 1
+set craft_name = BD2 "Mantis" HD
 set pilot_name = Bart SQ5SAZ
 set ap_hover_throttle = 1340
 set ap_throttle_max = 1850
@@ -139,7 +145,17 @@ profile 0
 
 # profile 0
 set throttle_boost = 30
+set i_pitch = 100
+set d_pitch = 44
+set i_roll = 95
+set d_roll = 39
+set i_yaw = 95
+set d_max_roll = 52
+set d_max_pitch = 59
+set launch_control_mode = FULL
 set dyn_idle_min_rpm = 44
+set simplified_i_gain = 120
+set simplified_d_gain = 130
 
 profile 1
 
