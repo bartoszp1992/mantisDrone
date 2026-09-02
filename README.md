@@ -2,7 +2,7 @@
 
 ![Mantis photo](images/mantis_white01.jpg)
 
-**"Mantis" is 1,2" printable freestyle/racing 1S tinywhoop**
+**"Mantis" is 1.2" or 1.6" class printable freestyle/racing 1S tinywhoop**
 
 # 3D printing
 - **frame**
@@ -15,8 +15,6 @@
 : PA12
 - **base**
 : PC-CF/PETG-CF
-- **tail support**
-: TPU
 
 # mechanical
 - **base**
@@ -24,19 +22,21 @@
 - **frame**
 : printed mantis frame
 - **propellers**
-: HQ 31mm Ultralight 3-Blade Propellers (1.0mm Shaft) or NBD Azi 3 blade 31mm
+: HQ Ultralight 3-Blade Propellers (1.0mm Shaft) or NBD Azi 3 blade. 31mm for 1.2" or 40mm for 1.6"
 - **PA screws**
-: 4x PA M2x15 screws
+: 4x PA M2x20 screws
 - **PA nuts**
 : 4x PA M2 nuts
+- **vibration isolators**
+: 2x additional M2 vibration isolator for canopy mounts
 
 # electronic
 - **FC**
-: BETAFPV Matrix 1S Brushless Flight Controller 4IN1/3IN1
+: BETAFPV Matrix 1S Brushless Flight Controller 5IN1/4IN1/3IN1
 - **motors 1.2"**
 : HAPPYMODEL SE0702 KV28000
 - **motors 1.6"**
-: BETAFPV 0802 Brushless Motors (2026) Racing
+: BETAFPV 0802 Brushless Motors (2026) Racing/Freestyle
 - **camera**
 : CADDXFPV ant lite / BETAFPV C03(SD) or P1 air unit(HD)
 > for SD: order also CADDXFPV Camera Accessories OSD Menu Board for ant lite camera, and switch video mode to PAL
@@ -51,31 +51,18 @@
 - **VTX**
 : Foxeer reaper nano(only for SD 4in1)
 
-# control
-- **controller**
-: Jumper Bumblebee, or any other with ELRS and edgeTX
-- **batteries**
-: 2x 18650 any branded Li-Ion cells for controller supply
-- **goggle**
-: BETAFPV VR03 or any other analog goggles for SD
-- **memory**
-: 32G SDcard if you want to record your flights
-
 # software
 - **FC config**
 : betaflight configurator
-- **radio config**
-: ExpressLRS Configurator
 
 # tips
-- use vibroinsulator to mount canopy tail to prevent random sliding
-- use half of the vibroinsulator as a pad under the front of the canopy to minimize the jello effect
+- put vibration isolator inside canopy tail mount
+- put half of the cut-in vibration isolator as a pad for the front mount of the canopy
 
 # firmware
 If you are building remotely:
 > choose analog OSD Protocol and type **OSD_HD** in custom defines, to build firmware with both- digital and analog OSD 
 > In other options add **Magnetometers**, **Position Hold** and **Altitude Hold**
-
 
 ## notice
 This repository includes third-party firmware binaries used by this FPV drone.
