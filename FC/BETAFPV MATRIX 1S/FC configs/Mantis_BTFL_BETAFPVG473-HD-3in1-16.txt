@@ -56,11 +56,11 @@ aux 14 49 7 1700 2100 0 0
 
 # master
 set gyro_lpf1_static_hz = 0
-set gyro_lpf2_static_hz = 650
 set dyn_notch_q = 750
 set gyro_lpf1_dyn_min_hz = 0
 set gyro_lpf1_dyn_max_hz = 650
-set acc_trim_pitch = 1
+set acc_trim_pitch = 6
+set acc_trim_roll = 1
 set acc_calibration = -82,9,5,1
 set fpv_mix_degrees = 20
 set blackbox_sample_rate = 1/1
@@ -94,7 +94,6 @@ set gps_rescue_alt_mode = CURRENT_ALT
 set gps_rescue_initial_climb = 2
 set gps_rescue_allow_arming_without_fix = ON
 set pos_hold_without_mag = ON
-set simplified_gyro_filter_multiplier = 130
 set ledstrip_rainbow_freq = 102
 set osd_warn_bitmask = 270329
 set osd_cap_alarm = 1900
@@ -138,24 +137,13 @@ set debug_mode = FFT_FREQ
 set rpm_filter_harmonics = 1
 set craft_name = BD2 "Mantis" HD
 set pilot_name = Bart SQ5SAZ
-set ap_hover_throttle = 1340
+set ap_hover_throttle = 1420
 set ap_throttle_max = 1850
 
 profile 0
 
 # profile 0
-set throttle_boost = 30
-set i_pitch = 100
-set d_pitch = 44
-set i_roll = 95
-set d_roll = 39
-set i_yaw = 95
-set d_max_roll = 52
-set d_max_pitch = 59
 set launch_control_mode = FULL
-set dyn_idle_min_rpm = 44
-set simplified_i_gain = 120
-set simplified_d_gain = 130
 
 profile 1
 
