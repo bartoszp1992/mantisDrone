@@ -143,7 +143,17 @@ set ap_throttle_max = 1850
 profile 0
 
 # profile 0
+set p_pitch = 32
+set i_pitch = 47
+set d_pitch = 17
+set f_pitch = 87
+set i_roll = 63
+set i_yaw = 63
+set d_max_pitch = 23
 set launch_control_mode = FULL
+set simplified_i_gain = 80
+set simplified_pitch_d_gain = 50
+set simplified_pitch_pi_gain = 70
 
 profile 1
 
