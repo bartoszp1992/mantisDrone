@@ -1,5 +1,6 @@
 defaults nosave
 
+# diff all
 
 # version
 # Betaflight / STM32G47X (G473) 2025.12.2 Jul 30 2026 / 19:03:24 (79065c96b) MSP API: 1.47
@@ -13,7 +14,7 @@ defaults nosave
 
 board_name BETAFPVG473
 manufacturer_id BEFH
-mcu_id 001b00273235510f30303938
+mcu_id 001c00363235510f30303938
 signature 
 
 # name: BD2 "Mantis" HD
@@ -144,33 +145,41 @@ profile 0
 
 # profile 0
 set profile_name = ducts
-set dterm_lpf2_static_hz = 0
-set d_pitch = 28
-set d_max_pitch = 39
+set dterm_lpf1_dyn_min_hz = 86
+set dterm_lpf1_dyn_max_hz = 172
+set dterm_lpf1_static_hz = 86
+set dterm_lpf2_static_hz = 172
+set d_pitch = 31
+set d_roll = 33
+set d_max_roll = 44
+set d_max_pitch = 43
 set dyn_idle_min_rpm = 25
+set simplified_d_gain = 110
 set simplified_pitch_d_gain = 85
+set simplified_dterm_filter_multiplier = 115
 
 profile 1
 
 # profile 1
 set profile_name = open
-set dterm_lpf2_static_hz = 0
+set dterm_lpf1_dyn_min_hz = 86
+set dterm_lpf1_dyn_max_hz = 172
+set dterm_lpf1_static_hz = 86
+set dterm_lpf2_static_hz = 172
 set p_pitch = 35
 set i_pitch = 64
-set d_pitch = 22
+set d_pitch = 25
 set f_pitch = 106
 set p_roll = 40
 set i_roll = 72
-set d_roll = 27
 set p_yaw = 40
 set i_yaw = 72
-set d_max_roll = 36
-set d_max_pitch = 31
+set d_max_pitch = 34
 set dyn_idle_min_rpm = 25
-set simplified_d_gain = 90
 set simplified_pi_gain = 90
 set simplified_pitch_d_gain = 75
 set simplified_pitch_pi_gain = 85
+set simplified_dterm_filter_multiplier = 115
 
 profile 2
 
