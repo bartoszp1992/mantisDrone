@@ -147,6 +147,7 @@ set profile_name = ducts
 set dterm_lpf2_static_hz = 0
 set d_pitch = 28
 set d_max_pitch = 39
+set dyn_idle_min_rpm = 25
 set simplified_pitch_d_gain = 85
 
 profile 1
@@ -165,6 +166,7 @@ set p_yaw = 40
 set i_yaw = 72
 set d_max_roll = 36
 set d_max_pitch = 31
+set dyn_idle_min_rpm = 25
 set simplified_d_gain = 90
 set simplified_pi_gain = 90
 set simplified_pitch_d_gain = 75
@@ -175,7 +177,7 @@ profile 2
 profile 3
 
 # restore original profile selection
-profile 1
+profile 0
 
 rateprofile 0
 
