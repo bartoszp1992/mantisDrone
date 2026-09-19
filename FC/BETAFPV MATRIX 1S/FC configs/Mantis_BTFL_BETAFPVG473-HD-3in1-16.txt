@@ -143,33 +143,39 @@ set ap_throttle_max = 1850
 profile 0
 
 # profile 0
-set p_pitch = 28
-set i_pitch = 40
-set d_pitch = 19
-set f_pitch = 74
-set p_roll = 35
-set i_roll = 51
-set d_roll = 23
-set f_roll = 95
-set p_yaw = 35
-set i_yaw = 51
-set f_yaw = 95
-set d_max_roll = 31
-set d_max_pitch = 25
-set launch_control_mode = FULL
-set simplified_master_multiplier = 80
-set simplified_i_gain = 80
-set simplified_pitch_d_gain = 70
-set simplified_pitch_pi_gain = 75
+set profile_name = ducts
+set dterm_lpf2_static_hz = 0
+set d_pitch = 28
+set d_max_pitch = 39
+set simplified_pitch_d_gain = 85
 
 profile 1
+
+# profile 1
+set profile_name = open
+set dterm_lpf2_static_hz = 0
+set p_pitch = 35
+set i_pitch = 64
+set d_pitch = 22
+set f_pitch = 106
+set p_roll = 40
+set i_roll = 72
+set d_roll = 27
+set p_yaw = 40
+set i_yaw = 72
+set d_max_roll = 36
+set d_max_pitch = 31
+set simplified_d_gain = 90
+set simplified_pi_gain = 90
+set simplified_pitch_d_gain = 75
+set simplified_pitch_pi_gain = 85
 
 profile 2
 
 profile 3
 
 # restore original profile selection
-profile 0
+profile 1
 
 rateprofile 0
 
