@@ -1,6 +1,5 @@
 defaults nosave
 
-# diff all
 
 # version
 # Betaflight / STM32G47X (G473) 2025.12.2 Jul 30 2026 / 19:03:24 (79065c96b) MSP API: 1.47
@@ -81,7 +80,7 @@ set failsafe_switch_mode = STAGE2
 set failsafe_procedure = GPS-RESCUE
 set align_board_roll = 180
 set align_board_yaw = 180
-set bat_capacity = 480
+set bat_capacity = 425
 set vbat_max_cell_voltage = 440
 set vbat_min_cell_voltage = 310
 set vbat_warning_cell_voltage = 340
@@ -106,7 +105,7 @@ set osd_tim_2_pos = 7213
 set osd_flymode_pos = 2584
 set osd_g_force_pos = 2080
 set osd_throttle_pos = 3181
-set osd_crosshairs_pos = 313
+set osd_crosshairs_pos = 4409
 set osd_ah_sbar_pos = 6458
 set osd_ah_pos = 6330
 set osd_current_pos = 2529
@@ -162,10 +161,7 @@ profile 1
 
 # profile 1
 set profile_name = open
-set dterm_lpf1_dyn_min_hz = 86
-set dterm_lpf1_dyn_max_hz = 172
-set dterm_lpf1_static_hz = 86
-set dterm_lpf2_static_hz = 172
+set dterm_lpf2_static_hz = 0
 set p_pitch = 35
 set i_pitch = 64
 set d_pitch = 25
@@ -179,7 +175,6 @@ set dyn_idle_min_rpm = 25
 set simplified_pi_gain = 90
 set simplified_pitch_d_gain = 75
 set simplified_pitch_pi_gain = 85
-set simplified_dterm_filter_multiplier = 115
 
 profile 2
 
