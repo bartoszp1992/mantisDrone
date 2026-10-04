@@ -161,7 +161,7 @@ profile 1
 
 # profile 1
 set profile_name = open
-set dterm_lpf2_static_hz = 0
+set dterm_lpf2_static_hz = 350
 set p_pitch = 35
 set i_pitch = 64
 set d_pitch = 25
@@ -175,6 +175,7 @@ set dyn_idle_min_rpm = 25
 set simplified_pi_gain = 90
 set simplified_pitch_d_gain = 75
 set simplified_pitch_pi_gain = 85
+set simplified_dterm_filter = OFF
 
 profile 2
 
