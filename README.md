@@ -5,7 +5,7 @@
 **"Mantis" is 1.2" or 1.6" class printable freestyle/racing 1S tinywhoop**
 
 # 3D printing
-- **frame**
+- **frame_A**
 : PA12
 - **ducts convertible**
 : PC/PETG
@@ -13,12 +13,10 @@
 : PA12/TPU
 - **FC cover**
 : PA12
-- **base**
+- **frame_B**
 : PC-CF/PETG-CF
 
 # mechanical
-- **base**
-: printed basebase
 - **frame**
 : printed mantis frame
 - **propellers**
